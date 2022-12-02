@@ -1,0 +1,427 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #262626;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+      Arial, sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    width: 100vw;
+    display: flex;
+    background-color: #fafafa;
+  }
+  
+  .first-layout {
+    flex: 1;
+    height: 100vh;
+  }
+  
+  .middle-layout {
+    flex: 2.45;
+    display: flex;
+    gap: 2em;
+    margin: 25px 0;
+    /* justify-content: space-between; */
+  }
+  
+  .middle-layout-container {
+    width: 470px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  
+  .first-layout nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    border-right: 1px solid #dbdbdb;
+    padding: 40px 0px 5px 25px;
+    background-color: white;
+    width: 18%;
+    height: 100vh;
+    position: fixed;
+  }
+  
+  .insta-logo img {
+    width: 103px;
+    margin-bottom: 18px;
+  }
+  
+  .nav-links a {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+  
+  .nav-links button {
+    border: 0;
+    height: 48px;
+    font-size: 1em;
+    padding-left: 10px;
+    margin-left: -10px;
+    background: transparent;
+  }
+  
+  .nav-links button:hover {
+    background-color: #fafafa;
+    border-radius: 30px;
+    width: 98%;
+  }
+  
+  .nav-links img {
+    width: 23px;
+  }
+  
+  .temi-img {
+    border-radius: 50%;
+  }
+  
+  .insta-stories-container {
+    position: relative;
+    border: 1px solid #dbdbdb;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px 10px 30px 10px;
+  }
+  
+  .insta-stories {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .insta-story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3em;
+    cursor: pointer;
+  }
+  
+  .insta-background {
+    width: 61.5px;
+    height: 61px;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(
+      45deg,
+      rgba(131, 58, 180, 1) 0%,
+      rgba(253, 29, 29, 1) 59%,
+      rgba(252, 176, 69, 1) 100%
+    );
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .insta-story img {
+    width: 57px;
+    height: 57px;
+    margin-top: 2.4px;
+    border: 2px solid white;
+    border-radius: 50%;
+  }
+  
+  .insta-story span {
+    font-size: 12px;
+  }
+  
+  .carousel-actions {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    padding: 0 18px;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+  
+  .carousel-actions button {
+    border-radius: 50%;
+    padding: 4px 6px 0;
+    border: 1px solid white;
+    background-color: white;
+  }
+  
+  .carousel-actions img {
+    width: 6px;
+    opacity: 0.6;
+  }
+  
+  #previous-button {
+    opacity: 0;
+  }
+  
+  .status-update {
+    border: 1px solid #dbdbdb;
+    border-radius: 10px;
+    background-color: white;
+  }
+  
+  .block1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 12px 15px;
+  }
+  
+  .block1 .partA {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+  
+  .block1 .partA img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid #dbdbdb;
+  }
+  
+  .block1 .partA a {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .block1 .partB img {
+    width: 15px;
+  }
+  
+  .block2 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .block3 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .block3 .partA,
+  .block3 .partB,
+  .block3 .partC,
+  .block3 .partD,
+  .block3 .partE {
+    padding: 0 15px;
+  }
+  
+  .block3 .partA {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .block3 .heart-speech-send {
+    display: flex;
+    gap: 1.2em;
+  }
+  
+  .block3 .heart-speech-send img:not(.send) {
+    width: 24px;
+  }
+  
+  img.send {
+    width: 22px;
+    height: 22px;
+  }
+  
+  .block3 .bookmark img {
+    width: 20px;
+  }
+  
+  .block3 .partB span {
+    font-weight: 600;
+  }
+  
+  .block3 .partC span:nth-of-type(1) {
+    font-weight: 600;
+  }
+  
+  .block3 .partC p,
+  .block3 .partD,
+  .block3 .partE {
+    opacity: 0.7;
+  }
+  
+  .block3 .partE {
+    font-size: 10px;
+  }
+  
+  .block3 .partF form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #dbdbdb;
+    padding: 10px 10px;
+  }
+  
+  .partF textarea {
+    padding-top: 5px;
+    border: 0;
+    width: 380px;
+    height: 25px;
+    outline: 0;
+    resize: none;
+  }
+  
+  .block3 .partF img {
+    width: 22px;
+  }
+  
+  .block3 .partF span {
+    color: #b1defc;
+    font-weight: 600;
+  }
+  
+  ::placeholder {
+    font-size: 14px;
+    opacity: 0.3;
+  }
+  
+  .last-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 32%;
+    margin-top: 55px;
+  }
+  
+  .profile-followers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .my-profile {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+  
+  .my-username {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1em;
+  }
+  
+  .my-username a {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .my-username a ~ span {
+    font-size: 14px;
+    opacity: 0.6;
+  }
+  
+  .followers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9em;
+  }
+  
+  .suggestion,
+  .followers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .followers {
+    padding-left: 5px;
+  }
+  
+  .my-profile img {
+    width: 56px;
+    border-radius: 50%;
+  }
+  
+  .follower {
+    display: flex;
+    gap: 0.65em;
+    align-items: center;
+  }
+  .username {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+  }
+  
+  .username a {
+    font-size: 13.5px;
+    font-weight: 600;
+  }
+  
+  .username .followed {
+    font-size: 12px;
+    opacity: 0.6;
+  }
+  
+  .follower img {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+  }
+  
+  .sugg_for_u {
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0.5;
+  }
+  
+  .follow,
+  .see-all,
+  .switch {
+    font-size: 12px;
+  }
+  
+  .switch,
+  .follow {
+    color: #0095f6;
+  }
+  
+  .follow,
+  .see-all,
+  .switch {
+    font-weight: 600;
+  }
+  
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-top: 20px;
+    opacity: 0.3;
+  }
+  
+  footer ul {
+    list-style: none;
+    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0;
+    /* gap: 1em; */
+  }
+  
+  footer li {
+    margin-bottom: 5px;
+  }
+  
+  footer li::after {
+    content: "\00B7";
+    margin: 0 0.25em 0 0.25em;
+  }
+  
+  footer span {
+    font-size: 12px;
+  }

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Instagram-clone</title>
+  </head>
+  <body>
+    <header class="first-layout">
+      <nav>
+        <div class="insta-logo">
+          <a href=""><img src="./Asset/Instagram_logo.svg.png" alt="" /></a>
+        </div>
+        <div class="nav-links">
+          <button><a href=""
+            ><img src="./Asset/homepage.png" alt="" /><span>Home</span></a
+          ></button>
+        </div>
+        <div class="nav-links">
+          <button><a href=""
+            ><img src="./Asset/search-interface-symbol.png" alt="" /><span
+              >Search</span
+            ></a
+          ></button>
+        </div>
+        <div class="nav-links">
+          <button><a href=""
+            ><img src="./Asset/compass.png" alt="" /><span>Explore</span></a
+          ></button>
+        </div>
+        <div class="nav-links">
+          <button><a href=""
+            ><img src="./Asset/messenger.png" alt="" /><span>Messages</span></a
+          ></button>
+        </div>
+        <div class="nav-links">
+          <button><a href=""
+            ><img src="./Asset/heart.png" alt="" /><span>Notifications</span></a
+          ></button>
+        </div>
+        <div class="nav-links">
+          <button><a href=""><img src="./Asset/tab.png" alt="" /><span>Create</span></a>
+        </div></button>
+        <div class="nav-links">
+          <button><a href=""
+            ><img src="./Asset/story image.jpg" alt="" class="temi-img"/><span>Profile</span></a
+          ></button>
+        </div>
+        <div class="nav-links">
+          <button><a href=""><img src="./Asset/menu.png" alt="" /><span>More</span></a></button>
+        </div>
+      </nav>
+    </header>
+    <main class="middle-layout">
+      <section class="middle-layout-container">
+        <section class="insta-stories-container">
+            <div class="insta-stories">
+              <div class="insta-background">
+              <div class="insta-story">
+            <img src="./Asset/story image.jpg" alt="" /><span>story</span>
+          </div></div>
+          <div class="insta-background">
+          <div class="insta-story">
+            <img src="./Asset/1A Tinu_xx.jpg" alt="" /><span>tinu_xx</span>
+        </div></div>
+        <div class="insta-background">
+        <div class="insta-story">
+            <img src="./Asset/1B the_samuel.jpg" alt="" /><span>the_samuel</span>
+        </div></div>
+        <div class="insta-background">
+        <div class="insta-story">
+            <img src="./Asset/1C OdesbyMo.jpg" alt="" /><span>odesbyMo</span>
+        </div></div>
+        <div class="insta-background">
+        <div class="insta-story">
+            <img src="./Asset/1D michael_ayoade.jpg" alt="" /><span>michael_ayoade</span>
+          </div></div>
+          <div class="insta-background">
+          <div class="insta-story">
+            <img src="./Asset/i_am_muyi.jpg" alt="" /><span>i_am_muyi</span>
+          </div></div>
+        </div>
+          <div class="carousel-actions">
+            <button id="previous-button" onclick="moveLeft()">
+              <img src="./Asset/left-chevron.png" alt="" />
+            </button>
+            <button id="next-button" onclick="moveRight()">
+              <img src="./Asset/chevron.png" alt="" />
+            </button>
+          </div>
+        </section>
+        <section class="status-update">
+          <div class="block1">
+            <div class="partA">
+              <img src="./Asset/image_CCI IKEJA.jpg" alt="" />
+              <a href=""><span>cci_ikeja</span></a>
+            </div>
+            <div class="partB">
+            <img src="./Asset/more.png" alt="" />
+            </div>
+          </div>
+          <div class="block2">
+            <img src="./Asset/cci_ikeja.jpeg" alt="" />
+          </div>
+          <div class="block3">
+            <div class="partA">
+              <div class="heart-speech-send">
+                <img src="./Asset/heart.png" alt="" />
+                <img
+                  src="./Asset/speech-bubble.png"
+                  alt=""/>
+                <img src="./Asset/send.png" alt="" class="send" />
+              </div>
+              <div class="bookmark">
+                <img src="./Asset/bookmark.png" alt="" />
+              </div>
+            </div>
+            <div class="partB">
+              <span>67,964 likes</span>
+            </div>
+            <div class="partC">
+              <span>cci_ikeja</span>
+              <span>it's eight days to go.... and we can't wait!!! </span>
+              <p>...more</p>
+            </div>
+            <div class="partD">View all 300 comments</div>
+            <div class="partE">20 HOURS AGO</div>
+          <div class="partF">
+              <form action="">
+                <img src="./Asset/happy.png" alt="" />
+                <textarea name="" id="" cols="30" rows="10" placeholder="Add a comment..."></textarea>
+                <span>Post</span>
+              </form>
+          </div>
+          </div>
+        </section>
+        <section class="status-update">
+          <div class="block1">
+            <div class="partA">
+              <img src="images/maureen.jpg" alt="" />
+              <a href=""><span>bankythebestowed</span></a>
+            </div>
+            <div class="partB">
+            <img src="./Asset/more.png" alt="" />
+            </div>
+          </div>
+          <div class="block2">
+            <img src="./Asset/bankythebestowed.jpeg" alt="" />
+          </div>
+          <div class="block3">
+            <div class="partA">
+              <div class="heart-speech-send">
+                <img src="./Asset/heart.png" alt="" />
+                <img
+                  src="./Asset/speech-bubble.png"
+                  alt=""/>
+                <img src="images/send.png" alt="" />
+              </div>
+              <div class="bookmark">
+                <img src="./Asset/bookmark.png" alt="" />
+              </div>
+            </div>
+            <div class="partB">
+              <span>528 likes</span>
+            </div>
+            <div class="partC">
+              <span>bankythebestowed</span>
+              <span>Wahala Dey o</span>
+              <p style="font-size:24px">
+                &#128512; &#128516; &#128525; &#128151;
+                </p>
+              <p>...more</p>
+            </div>
+            <div class="partD">View all 45 comments</div>
+            <div class="partE">5 HOURS AGO</div>
+          <div class="partF">
+              <form action="">
+                <img src="./Asset/happy.png" alt="" />
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <span>Post</span>
+              </form>
+          </div>
+          </div>
+        </section>
+        <section class="status-update">
+          <div class="block1">
+            <div class="partA">
+              <img src="./Asset/bellanaijalogo.jpg" alt="" />
+              <a href=""><span>bellanaijaweddings</span></a>
+            </div>
+            <div class="partB">
+            <img src="./Asset/more.png" alt="" />
+            </div>
+          </div>
+          <div class="block2">
+            <img src="./Asset/bellanaijaweddings.jpeg" alt="" />
+          </div>
+          <div class="block3">
+            <div class="partA">
+              <div class="heart-speech-send">
+                <img src="./Asset/heart.png" alt="" />
+                <img
+                  src="./Asset/speech-bubble.png"
+                  alt=""/>
+                <img src="./Asset/send.png" alt="" />
+              </div>
+              <div class="bookmark">
+                <img src="./Asset/bookmark.png" alt="" />
+              </div>
+            </div>
+            <div class="partB">
+              <span>1,085 likes</span>
+            </div>
+            <div class="partC">
+              <span>bellanaijaweddings</span>
+              <span>The beauty of friendship 😘😘😘</span>
+              <p>...more</p>
+            </div>
+            <div class="partD">View 350 comments</div>
+            <div class="partE">50 MINUTE AGO</div>
+          <div class="partF">
+              <form action="">
+                <img src="./Asset/happy.png" alt="" />
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <span>Post</span>
+              </form>
+          </div>
+          </div>
+        </section>
+        <section class="status-update">
+          <div class="block1">
+            <div class="partA">
+              <img src="./Asset/diaryofanaijalogo.jpg" alt="" />
+              <a href=""><span>diaryofanaijagirl</span></a>
+            </div>
+            <div class="partB">
+            <img src="./Asset/more.png" alt="" />
+            </div>
+          </div>
+          <div class="block2">
+            <img src="./Asset/diaryofanaijagirl.jpeg" alt="" />
+          </div>
+          <div class="block3">
+            <div class="partA">
+              <div class="heart-speech-send">
+                <img src="./Asset/heart.png" alt="" />
+                <img
+                  src="images/speech-bubble.png"
+                  alt=""/>
+                <img src="./Asset/send.png" alt="" />
+              </div>
+              <div class="bookmark">
+                <img src="./Asset/bookmark.png" alt="" />
+              </div>
+            </div>
+            <div class="partB">
+              <span>1,209 likes</span>
+            </div>
+            <div class="partC">
+              <span>diaryofanaijagirl</span>
+              <span>Have you filled your basket yet? Have you <br>
+                 drawn up a list? @danglifestyle_ is ready for you. Talk to <br>
+                  our aestheticians now to recommend products for  </span>
+              <p>...more</p>
+            </div>
+            <div class="partD">View all 70 comments</div>
+            <div class="partE">15 HOURS AGO</div>
+          <div class="partF">
+              <form action="">
+                <img src="./Asset/happy.png" alt="" />
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <span>Post</span>
+              </form>
+          </div>
+          </div>
+        </section>
+      </section>
+      <section class="last-layout">
+        <div class="profile-followers">
+          <div class="my-profile">
+            <img src="./Asset/story image.jpg" alt="" />
+            <div class="my-username">
+              <a href=""><span>iam_tabita</span></a>
+              <span>Tomisin Adefunso</span>
+            </div>
+          </div>
+          <span class="switch">Switch</span>
+        </div>
+        <div class="followers-container">
+          <div class="suggestion">
+            <span class="sugg_for_u">Suggestions For You</span>
+            <span class="see-all">See All</span>
+          </div>
+          <div class="followers">
+            <div class="follower">
+              <img src="./Asset/follow11.jpg" alt="" />
+              <div class="username">
+                <a href=""><span>nifemi_dorcas_</span></a>
+                <span class="followed">New to Instagram</span>
+              </div>
+            </div>
+            <span class="follow">Follow</span>
+          </div>
+          <div class="followers">
+            <div class="follower">
+              <img src="./Asset/follow22.jpg" alt="" />
+              <div class="username">
+                <a href=""><span>dollscastle_by_baricrown</span></a>
+                <span class="followed">Followed by im_jayblack + 52 more</span>
+              </div>
+            </div>
+            <span class="follow">Follow</span>
+          </div>
+          <div class="followers">
+            <div class="follower">
+              <img src="./Asset/follow33.jpg" alt="" />
+              <div class="username">
+                <a href=""><span>lichikiddies</span></a>
+                <span class="followed">Followed by tabithaanefashion + 4 more</span>
+              </div>
+            </div>
+            <span class="follow">Follow</span>
+          </div>
+          <div class="followers">
+            <div class="follower">
+              <img src="./Asset/follow44.jpg" alt="" />
+              <div class="username">
+                <a href=""><span>_esther.olajide_</span></a>
+                <span class="followed">Followed by rcf_kwasu + 9 more</span>
+              </div>
+            </div>
+            <span class="follow">Follow</span>
+          </div>
+          <div class="followers">
+            <div class="follower">
+              <img src="./Asset/follow5.jpg" alt="" />
+              <div class="username">
+                <a href=""><span>thedarekayode</span></a>
+                <span class="followed">Follows you</span>
+              </div>
+            </div>
+            <span class="follow">Follow</span>
+          </div>
+        </div>
+            <footer>
+                <ul>
+                    <a href="">
+                        <li>About</li>
+                    </a>
+                    <a href="">
+                        <li>Help</li>
+                    </a>
+                    <a href="">
+                        <li>Press</li>
+                    </a>
+                    <a href="">
+                        <li>API</li>
+                    </a>
+                    <a href="">
+                        <li>Jobs</li>
+                    </a>
+                    <a href="">
+                        <li>Privacy</li>
+                    </a>
+                    <a href="">
+                        <li>Terms</li>
+                    </a>
+                    <a href="">
+                        <li>Locations</li>
+                    </a>
+                    <a href="">
+                        <li>Language</li>
+                    </a>
+                </ul>
+            <span>
+                © 2022 INSTAGRAM FROM META
+            </span>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
